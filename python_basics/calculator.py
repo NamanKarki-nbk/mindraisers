@@ -33,44 +33,71 @@ def main():
     print("5.Modulus\n")
     print("6. Perform all the operations\n")
     
-    choice = float(input("Enter choice in 1,2,3,4 or 5:\n"))
+    # choice = float(input("Enter choice in 1,2,3,4 or 5:\n"))
     
-    if choice == 1:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        print(f"The sum is: {add(num1,num2)}")
+    # if choice == 1:
+    #     num1 = float(input("Enter first number: "))
+    #     num2 = float(input("Enter second number: "))
+    #     print(f"The sum is: {add(num1,num2)}")
         
-    elif choice == 2:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        print(f"The difference is: {sub(num1,num2)}")
+    # elif choice == 2:
+    #     num1 = float(input("Enter first number: "))
+    #     num2 = float(input("Enter second number: "))
+    #     print(f"The difference is: {sub(num1,num2)}")
     
-    elif choice == 3:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        print(f"The product is: {multiply(num1,num2)}")
+    # elif choice == 3:
+    #     num1 = float(input("Enter first number: "))
+    #     num2 = float(input("Enter second number: "))
+    #     print(f"The product is: {multiply(num1,num2)}")
     
-    elif choice == 4:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        print(f"The quotient is: {divide(num1,num2)}")
+    # elif choice == 4:
+    #     num1 = float(input("Enter first number: "))
+    #     num2 = float(input("Enter second number: "))
+    #     print(f"The quotient is: {divide(num1,num2)}")
     
-    elif choice == 5:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        print(f"The modulus is: {modulus(num1,num2)}")
+    # elif choice == 5:
+    #     num1 = float(input("Enter first number: "))
+    #     num2 = float(input("Enter second number: "))
+    #     print(f"The modulus is: {modulus(num1,num2)}")
     
-    elif choice == 6:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        print(f"The sum is: {add(num1,num2)}")
-        print(f"The difference is: {sub(num1,num2)}")
-        print(f"The product is: {multiply(num1,num2)}")
-        print(f"The quotient is: {divide(num1,num2)}")
-        print(f"The modulus is: {modulus(num1,num2)}")
+    # elif choice == 6:
+    #     num1 = float(input("Enter first number: "))
+    #     num2 = float(input("Enter second number: "))
+    #     print(f"The sum is: {add(num1,num2)}")
+    #     print(f"The difference is: {sub(num1,num2)}")
+    #     print(f"The product is: {multiply(num1,num2)}")
+    #     print(f"The quotient is: {divide(num1,num2)}")
+    #     print(f"The modulus is: {modulus(num1,num2)}")
     
-    else:
-        print("Invalid input")
+    # else:
+    #     print("Invalid input")
+        
+    num1 = float(input("Enter first number: ")) 
+    num2 = float(input("Enter second number: "))
+    
+    match int(input("Choose the valid option")):
+        case 1: 
+            result = add(num1,num2)
+            print(result)
+        case 2: 
+            result = sub(num1,num2)
+            print(result)
+        
+        case 3: 
+            result = multiply(num1,num2)
+            print(result)
+        
+        case 4: 
+            result = divide(num1,num2)
+            print(result)
+        
+        case 5: 
+            result = modulus(num1,num2)
+            print(result)
+        
+        case _: 
+            print("Invalid option")
+        
         
 if __name__ == "__main__":
     

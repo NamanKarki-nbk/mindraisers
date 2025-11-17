@@ -14,7 +14,7 @@ def check_username_dictionary(username):
         "sammy101": "password4"
     }
     
-    extracted_usernames = list(valid_users.keys())
+    extracted_usernames = valid_users.keys()
     
     if username in extracted_usernames :
         return "Valid User"
