@@ -34,7 +34,6 @@ def validate_user_credentials(username,password):
     else:
         return "Credentials are Invalid"
 
-
 if __name__ == "__main__":
     
     input_username = input("Enter your username:\n")

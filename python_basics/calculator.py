@@ -71,32 +71,34 @@ def main():
     
     # else:
     #     print("Invalid input")
-        
-    num1 = float(input("Enter first number: ")) 
-    num2 = float(input("Enter second number: "))
     
-    match int(input("Choose the valid option")):
-        case 1: 
-            result = add(num1,num2)
-            print(result)
-        case 2: 
-            result = sub(num1,num2)
-            print(result)
+    while True:
         
-        case 3: 
-            result = multiply(num1,num2)
-            print(result)
+        num1 = float(input("Enter first number: ")) 
+        num2 = float(input("Enter second number: "))
         
-        case 4: 
-            result = divide(num1,num2)
-            print(result)
-        
-        case 5: 
-            result = modulus(num1,num2)
-            print(result)
-        
-        case _: 
-            print("Invalid option")
+        match int(input("Choose the valid option")):
+            case 1: 
+                result = add(num1,num2)
+                print(result)
+            case 2: 
+                result = sub(num1,num2)
+                print(result)
+            
+            case 3: 
+                result = multiply(num1,num2)
+                print(result)
+            
+            case 4: 
+                result = divide(num1,num2)
+                print(result)
+            
+            case 5: 
+                result = modulus(num1,num2)
+                print(result)
+            
+            case _: 
+                print("Invalid option")
         
         
 if __name__ == "__main__":
