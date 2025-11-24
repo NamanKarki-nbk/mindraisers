@@ -32,6 +32,22 @@ def register():
         f.write(json.dumps(dict_credential) + "\n")
     print(f"Username '{username}' created successfully.")
 
+def login():
+    username = input("\nEnter your username: ")
+    password = input("Enter your password: ")
+
+    users = load_users()
+    found = False
+
+    for user in users:
+        if username in user and user[username] == password:
+            print("Login Successful")
+            found = True
+            break
+
+    if not found:
+        print("Login Failed")
+
 
 
 while True:
